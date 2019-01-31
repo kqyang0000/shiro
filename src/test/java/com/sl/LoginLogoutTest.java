@@ -13,7 +13,7 @@ public class LoginLogoutTest {
     @Test
     public void testHelloworld() {
         // 1.获取SecurityManager工厂，此处使用ini配置文件初始化SecurityManager
-        Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro-multi-realm.ini");
+        Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro-authenticator-all-success.ini");
         // 2.得到SecurityManager实例，并绑定给SecurityUtils
         org.apache.shiro.mgt.SecurityManager securityManager = factory.getInstance();
         SecurityUtils.setSecurityManager(securityManager);

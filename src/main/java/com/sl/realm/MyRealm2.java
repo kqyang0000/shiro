@@ -30,6 +30,6 @@ public class MyRealm2 implements Realm {
             throw new IncorrectCredentialsException();
         }
         // 如果身份认证成功，返回一个AuthenticationInfo实现
-        return new SimpleAuthenticationInfo(username, password, getName());
+        return new SimpleAuthenticationInfo(username, "zhang@163.com", getName());
     }
 }
